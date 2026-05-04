@@ -231,12 +231,12 @@ nav .btn-primary { padding: 11px 24px; font-size: 15px; }
 }
 #astro h2 span { color: #7CCBFF; }
 #astro .lead { font-size: 17px; color: rgba(255,255,255,0.6); margin-bottom: 32px; line-height: 1.7; }
-.astro-feats { display: flex; flex-direction: column; gap: 14px; }
-.astro-feat {
-  display: flex; align-items: center; gap: 14px;
-  font-size: 16px; color: rgba(255,255,255,0.8);
-}
-.feat-dot { width: 8px; height: 8px; background: var(--blue); border-radius: 50%; flex-shrink: 0; }
+.astro-fronts { display: flex; flex-direction: column; gap: 24px; }
+.astro-front { display: flex; flex-direction: column; gap: 6px; }
+.astro-front-header { display: flex; align-items: center; gap: 12px; font-size: 17px; font-weight: 700; color: var(--white); }
+.astro-front-icon { width: 32px; height: 32px; border-radius: 8px; background: rgba(3,122,200,0.15); border: 1px solid rgba(3,122,200,0.3); color: #7CCBFF; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+.astro-front-desc { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.6; padding-left: 44px; }
+.astro-front-desc strong { color: #7CCBFF; font-weight: 600; }
 
 /* Astro visual column */
 .astro-visual {
@@ -785,7 +785,8 @@ html.forma-flutuante .cta-box .btn-cta { border-radius: 16px; box-shadow: 0 16px
   #astro h2 { font-size: clamp(22px, 6vw, 32px); }
   #astro .lead { font-size: 15px; }
   .astro-eyebrow { font-size: 11px; padding: 7px 14px; }
-  .astro-feat { font-size: 14px; }
+  .astro-front-header { font-size: 15px; }
+  .astro-front-desc { font-size: 13px; padding-left: 44px; }
   .phase-features { gap: 6px; }
   .phase-tag { font-size: 12px; }
   .plan-price { font-size: 36px; }
@@ -989,13 +990,37 @@ html.pers-impacto .comp-card h3 { font-weight: 800; letter-spacing: -0.035em; }
       <!-- Coluna esquerda: texto -->
       <div class="fade-in">
         <div class="astro-eyebrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:inline-block;vertical-align:middle;margin-right:6px"><path d="M7 1v12M1 7h12M3 3l8 8M11 3l-8 8" stroke="#7CCBFF" stroke-width="1.4" stroke-linecap="round"/></svg>EXCLUSIVO ORBIT</div>
-        <h2>A única plataforma que manda inteligência do seu negócio <span>sem você pedir.</span></h2>
-        <p class="lead">O Astro IA analisa sua semana inteira e te manda um relatório completo pelo WhatsApp toda segunda-feira de manhã. Sem você precisar abrir nenhum sistema.</p>
-        <div class="astro-feats">
-          <div class="astro-feat"><div class="feat-dot"></div>Faturamento total e comparativo semanal</div>
-          <div class="astro-feat"><div class="feat-dot"></div>Melhor profissional do período</div>
-          <div class="astro-feat"><div class="feat-dot"></div>Clientes que sumiram com sugestão de reconquista</div>
-          <div class="astro-feat"><div class="feat-dot"></div>Disponível nos planos Pro, Business e Enterprise</div>
+        <h2>O objetivo é um só: cliente voltando sempre. <span>A IA ataca em 4 frentes.</span></h2>
+        <p class="lead">O Astro não é só um robô. É a inteligência do Orbit trabalhando 24h por dia pelo WhatsApp para lotar sua agenda e fidelizar quem já cortou com você.</p>
+        <div class="astro-fronts">
+          <div class="astro-front">
+            <div class="astro-front-header">
+              <div class="astro-front-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div>
+              1. Agendamento pelo WhatsApp sem app
+            </div>
+            <div class="astro-front-desc">O cliente manda mensagem: "quero cortar sábado às 10h com o João". A IA entende, verifica a agenda e já bloqueia o horário. <strong>Sem baixar app ou acessar link</strong> — direto no WhatsApp que o cliente já usa.</div>
+          </div>
+          <div class="astro-front">
+            <div class="astro-front-header">
+              <div class="astro-front-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+              2. Confirmação e lembrete automático
+            </div>
+            <div class="astro-front-desc">24h antes, o Orbit manda: "Confirma seu corte amanhã?". Se responder NÃO, o horário é liberado automaticamente. Resultado: <strong>menos furo na agenda e mais previsibilidade de caixa.</strong></div>
+          </div>
+          <div class="astro-front">
+            <div class="astro-front-header">
+              <div class="astro-front-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+              3. Datas especiais — Aniversário e Retorno
+            </div>
+            <div class="astro-front-desc">Cliente não vem há 25+ dias? Recebe uma mensagem pra reagendar. É aniversário? Ganha um horário especial. <strong>Marketing personalizado, no momento certo.</strong></div>
+          </div>
+          <div class="astro-front">
+            <div class="astro-front-header">
+              <div class="astro-front-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
+              4. Fidelização automática: O Resumo Semanal
+            </div>
+            <div class="astro-front-desc">Toda segunda o dono recebe: faturamento, faltas e clientes inativos. Acorde sabendo exatamente <strong>quem está sumindo antes de perder para o concorrente.</strong></div>
+          </div>
         </div>
       </div>
 
